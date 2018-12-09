@@ -1,0 +1,6 @@
+## Interface: 800000
+## Title: Pride - Personal Achievements
+## Author: Anjanas
+## Version: 0.0.1
+
+pride_main.lua
