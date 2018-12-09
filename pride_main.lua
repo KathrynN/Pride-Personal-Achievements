@@ -12,15 +12,6 @@ function desaturate_completed_achievements()
 		return id
 	end
 	
-			--- find achievement when searching for Incomplete (TEST)
-	local originalGetAchievementInfo = GetAchievementInfo
-	function GetAchievementInfo_TEST(achievementID)
-		local id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe, earnedBy = originalGetAchievementInfo(achievementID)
-		if ( completed and not wasEarnedByMe ) then
-			print(name)
-		end
-		return id, name, points, completed, month, day, year, description, flags, icon, rewardText, isGuild, wasEarnedByMe, earnedBy
-	end
 end
 
 --- only replace the function when the achievement frame is opened (before that it doesn't exist)
